@@ -7,8 +7,7 @@ var wordMap = {
     5 : '苍穹之下<br/>回头重新拥抱自然',
     6 : '路走多了<br/>还是希望像飞鸟一样'
 };
-window.onload=function(){   //页面加载完成后执行
-    $('script').remove('.loading');
+window.onload=function(){   //页面完全加载完成后执行
     $('div').remove('.loading');
 	var $logo = $('.logo');
 	var $login = $('.login-box');
