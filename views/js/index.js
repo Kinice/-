@@ -62,3 +62,16 @@ function change(img,index){  //变换效果
         left:50
     },3000);
 }
+$('.log-tab li').bind('click',function(){
+    var tab = this;
+    var qtab = $(this);
+    qtab.siblings().removeClass('selected');
+    qtab.addClass('selected');
+    if(tab.innerHTML=='登录'){
+        $('.reg').css('display','none');
+        $('.log').fadeIn();
+    }else{
+        $('.log').css('display','none');
+        $('.reg').fadeIn();
+    }
+});
