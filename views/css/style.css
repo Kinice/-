@@ -1,0 +1,99 @@
+/*首页*/
+.bg-img{
+	min-width: 100%;
+	min-height: 100%;
+	position: fixed;
+	top:0;
+	left: 0;
+	z-index: -999;
+	background-color: #ccc;
+}
+.bg-img img{
+	display: none;
+	min-width: 100%;
+	min-height: 100%;
+	opacity: 0.7;
+	position: absolute;
+	top: -100px;
+	left: -180px;
+	z-index: -999;
+}
+.login-part{
+	position: absolute;
+	right: 200px;
+	width: 360px;
+}
+.logo{
+	position: absolute;
+	top: 100px;
+	width: 360px;
+	text-shadow:2px 2px 3px #333;
+	opacity: 0.2;
+}
+.logo h1{
+	color: #fff;
+	font-size: 40px;
+	font-weight: normal;
+	font-family: "楷体";
+}
+.logo h2{
+	color:#fff;
+	font-size: 30px;
+	font-weight: normal;
+	font-family: "楷体";
+	text-align: right;
+}
+.login-box{
+	width: 360px;
+	background-color: #fff;
+	position: absolute;
+	top: 180px;
+	border-radius: 4px;
+	box-shadow: 0px 0px 5px #555;
+	padding: 20px 0;
+	opacity: 0.2;
+}
+.log-tab{
+	display: block;
+	width: 92%;
+	margin:0 auto;
+	border-bottom: 1px solid #dddddd;
+	text-align: center;
+}
+.log-tab li{
+	list-style: none;
+	display: inline-block;
+	padding: 0 40px;
+	height: 36px;
+	line-height: 36px;
+	font-size: 18px;
+	cursor: pointer;
+}
+.log-tab .selected{
+	color:#1ba321;
+	border-bottom: 1px solid #1ba321;
+}
+.log{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	padding: 30px 0;
+	text-align: center;
+}
+.log input{
+	box-sizing:border-box;
+	width: 100%;
+	height: 34px;
+	padding: 0 5px;
+	margin: 20px 0 0;
+}
+.log input[type='submit']{
+	background: #1ba321;
+	border:none;
+	height: 40px;
+	color:#fff;
+	font-size: 16px;
+}
+.reg{
+	display: none;
+}
