@@ -25,7 +25,7 @@ blockquote{color:#666666;margin:0;padding-left: 3em;border-left: 0.5em #EEE soli
 .m-article p, .m-article blockquote, .m-article ul, .m-article ol, .m-article dl, .m-article li, .m-article table, .m-article pre {margin: 15px 0;}
 .m-article p{margin:1em 0;}
 /* css common */
-.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix:after {content: ""; display: block; height:0; clear:both; visibility: hidden;}
 .clearfix { zoom:1; }
 .fl{ float: left; }
 .fr{ float: right; }

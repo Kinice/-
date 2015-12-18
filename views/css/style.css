@@ -18,7 +18,6 @@
     width: 720px;
     margin: 20px auto 0;
     padding-top: 10px;
-    height: 2000px;
 }
 .g-ft{
     height: 50px;
@@ -323,14 +322,54 @@
 	border-radius: 3px;
 	background-color: #fff;
 	padding: 2px 15px;
+    zoom: 1;
+}
+.talk-box:after{
+    content: ""; display: block; height:0; clear:both; visibility: hidden;
 }
 .talk-box h1{
 	height: 35px;
 	line-height: 35px;
 	font-size: 18px;
 }
+.talk-left{
+    height: 70px;
+    padding: 10px 10px;
+    width: 50px;
+    float: left;
+}
 .talk-left .avatar{
 	height: 44px;
 	width: 44px;
 	border-radius: 50%;
+}
+.talk-box .name{
+    height: 40px;
+    line-height: 40px;
+}
+.talk-main{
+    overflow: hidden;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.content{
+    padding-right: 15px;
+    line-height: 1.5;
+}
+.pic{
+    padding-top: 10px;
+    padding-right: 20px;
+}
+.pic img{
+    width:200px;
+    cursor: pointer;
+}
+.func{
+    margin-top: 20px;
+    padding: 5px;
+}
+.func span{
+    color: #666;
+    font-size: 14px;
+    margin-right: 20px;
 }
