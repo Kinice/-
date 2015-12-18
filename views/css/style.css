@@ -1,25 +1,27 @@
 /*公共部分*/
-.g-hd{
+.g-hd{/*头部*/
 	width: 100%;
     height: 58px;
-    background-color: #3b3e47;
+    background-color: rgba(120,120,120,0.7);
     position: fixed;
     top: 0;
     left: 0;
     color: #ececee;
     z-index: 10000;
 }
-.g-bd{
+.g-bd{/*中部*/
 	width: 100%;
     height: 100%;
     margin-top: 58px;
 }
-.g-inner {
+.g-inner {/*内容部分盒子*/
     width: 720px;
-    margin: 20px auto 0;
-    padding-top: 10px;
+    margin: 68px auto 20px;
+    padding:1px 6px;
+    background-color: rgba(80,80,80,0.5);
+    border-radius: 5px;
 }
-.g-ft{
+.g-ft{/*页脚*/
     height: 50px;
     width: 100%;
     background-color: rgba(120,120,120,0.7);
@@ -27,7 +29,7 @@
     text-align: center;
 }
 /*首页*/
-.loading{
+.loading{/*loading画面*/
     background-image: url('../images/loading.gif');
     background-color: #dee1e2;
     background-repeat: no-repeat;
@@ -39,7 +41,7 @@
     height: 100%;
     z-index: 99;
 }
-.bg-img{
+.bg-img{/*背景*/
 	min-width: 100%;
 	min-height: 100%;
 	position: fixed;
@@ -67,7 +69,7 @@
     text-shadow:2px 2px 3px #333;
     font-family: "楷体";
 }
-.login-part{
+.login-part{/*登录框部分*/
 	position: absolute;
 	right: 200px;
 	width: 360px;
@@ -150,8 +152,8 @@
 .reg{
 	display: none;
 }
-/*头部*/
-.m-logo {
+/*头部内部*/
+.m-logo {/*logo文字*/
     width: auto;
     position: absolute;
     left: 6%;
@@ -161,45 +163,11 @@
     height: 58px;
     line-height: 58px;
 }
-.mobile-icon {
-    font-size: 24px;
-    color: #fff;
-    display: none;
-    height: 24px;
-    width: 24px;
+.m-logo h1 span{
+    font-size: 26px;
+    color: #00ff00;
 }
-.home {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.menu {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-.mobile-menu {
-    width: 90%;
-    padding: 10px 0px;
-    background: #acd0ce;
-    position: absolute;
-    top: 56px;
-    right: 5%;
-    z-index: 100000;
-    border-radius: 4px;
-    display: none;
-}
-.mobile-menu:after {
-    content: "";
-    border-style: solid;
-    border-width: 10px;
-    border-color: transparent transparent #acd0ce transparent;
-    position: absolute;
-    top: -20px;
-    right: 4px;
-    z-index: 999999;
-}
-.pin{
+.pin{/*头部钉子*/
     display: block;
    	float: left;
    	line-height: 58px;
@@ -276,13 +244,13 @@
     text-decoration: none;
     border-bottom: 2px solid #50c5c3;
 }
+/*用户名*/
 .m-user {
 	float: left;
     height: 58px;
     line-height: 58px;
     color: #ececee;
 }
-
 .m-user a {
     color: #ececee;
 }
@@ -315,16 +283,17 @@
 .back-to-top:hover {
     background-color: #bbb;
 }
-.talk-box{
-	width: 100%;
-	margin: 10px 0;
-	box-shadow: 1px 1px 2px #444;
+/*微博详情*/
+.talk-box{/*微博盒子*/
+	width: 95%;
+	margin: 10px auto;
+	box-shadow: 0.6px 0.6px 2px #ddd;
 	border-radius: 3px;
 	background-color: #fff;
 	padding: 2px 15px;
     zoom: 1;
 }
-.talk-box:after{
+.talk-box:after{/*清除浮动*/
     content: ""; display: block; height:0; clear:both; visibility: hidden;
 }
 .talk-box h1{
@@ -332,7 +301,7 @@
 	line-height: 35px;
 	font-size: 18px;
 }
-.talk-left{
+.talk-left{/*头像及名称*/
     height: 70px;
     padding: 10px 10px;
     width: 50px;
@@ -347,7 +316,7 @@
     height: 40px;
     line-height: 40px;
 }
-.talk-main{
+.talk-main{/*微博正文盒子*/
     overflow: hidden;
     padding-left: 20px;
     padding-top: 10px;
@@ -364,7 +333,7 @@
     width:200px;
     cursor: pointer;
 }
-.func{
+.func{/*评赞功能区*/
     margin-top: 20px;
     padding: 5px;
 }
@@ -372,4 +341,41 @@
     color: #666;
     font-size: 14px;
     margin-right: 20px;
+}
+/*评论区*/
+.comment-box{
+    width: 95%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    border-radius: 4px;
+    position: relative;
+}
+.comment-box:before,.comment-box:after{
+    position: absolute;
+    top: -10px;
+    left: 112px;
+    border-width: 0 8px 10px;
+    border-style: solid;
+    border-color: transparent transparent #ddd;
+    content: '';
+}
+.comment-box:after{
+    top: -8px;
+    border-bottom-color: #fff;
+}
+.comment-li{
+    padding:20px 10px 5px;
+    border-bottom: 1px solid #ccc;
+}
+.comment-time{
+    padding-top: 10px;
+    font-size: 14px;
+    color: #aaa;
+    text-align: right;
+}
+.com-name{
+    font-size: 17px;
+    color: #14b4b0;
 }
