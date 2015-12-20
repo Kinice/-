@@ -14,6 +14,14 @@ $('.back-to-top').click(function(){
         scrollTop: 0
     },500);
 });
+$('.com-icon').click(function() {
+    var $com = $(this).parent().next();
+    if($com.css('display')=='none'){
+        $com.slideDown();
+    }else{
+        $com.slideUp();
+    }
+});
 $('.pin').click(function() {
     var $pin = $(this);
     var $hd = $('.g-hd');

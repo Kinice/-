@@ -342,8 +342,42 @@
     font-size: 14px;
     margin-right: 20px;
 }
+/*发表区*/
+.con-p{
+	margin:5px;
+}
+.con-form{
+	display: block;
+	width: 100%;
+	padding-bottom: 5px;
+}
+.con-form textarea{
+	border-width: 1px;
+	width: 98%;
+	height: 68px;
+	resize:none;
+	padding: 4px 5px;
+	margin-bottom: 5px;
+}
+.con-form textarea:focus{
+	border-color: #1ba321;
+}
+.con-form input[type='button']{
+	float: right;
+	background-color: #1ba321;
+	border: none;
+	width: 50px;
+	height: 26px;
+	margin-right: 3px;
+	color: #fff;
+	cursor: pointer;
+}
+.iconfont{
+	cursor: pointer;
+}
 /*评论区*/
 .comment-box{
+	display: none;
     width: 95%;
     border: 1px solid #ccc;
     padding: 10px;
@@ -378,4 +412,31 @@
 .com-name{
     font-size: 17px;
     color: #14b4b0;
+}
+.com-form{
+	display: block;
+	width: 100%;
+	padding-bottom: 5px;
+	padding-top: 10px;
+}
+.com-form textarea{
+	border-width: 1px;
+	width: 98%;
+	height: 58px;
+	resize:none;
+	padding: 4px 5px;
+	margin-bottom: 5px;
+}
+.com-form textarea:focus{
+	border-color: #1ba321;
+}
+.com-form input[type='button']{
+	float: right;
+	background-color: #1ba321;
+	border: none;
+	width: 50px;
+	height: 26px;
+	margin-right: 3px;
+	color: #fff;
+	cursor: pointer;
 }
