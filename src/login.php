@@ -1,6 +1,5 @@
 <?php
 	require_once 'conn.php';
-<<<<<<< HEAD
 	session_start();
 	$username = $_POST['username'];
 	$password = $_POST['password'];
@@ -12,7 +11,5 @@
 	}else{
 		header("Location: /HelpHomework/views/index.html");
 	}
-=======
 	echo $con;
->>>>>>> c61b54d6f646ca839f88670c147001a6ba0a69ed
 ?>
