@@ -14,6 +14,13 @@ $('.back-to-top').click(function(){
         scrollTop: 0
     },500);
 });
+
+function getScrollTop(){
+    return $(document).scrollTop();
+}
+function backOne(){
+    window.history.go(-1);
+}
 $('.pin').click(function() {
     var $pin = $(this);
     var $hd = $('.g-hd');
@@ -40,12 +47,6 @@ $('.pic img').click(function() {
         $(this).css('width','200');
     }
 });
-function getScrollTop(){
-    return $(document).scrollTop();
-}
-function backOne(){
-    window.history.go(-1);
-}
 function dispAbsolute(element){
     element.css('position','absolute');
 }

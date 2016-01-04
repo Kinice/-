@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>榕叶-分享你心情的地方</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-2.1.4.min.js"></script>
+    <script>
+        var _LoadingHtml = '<div class="loading"></div>';
+        document.write(_LoadingHtml);
+    </script>
+</head>
+<body>
+	<div class="bg-img">
+		<img src="./images/bg1.jpg">
+        <img src="./images/bg2.jpg">
+        <img src="./images/bg3.jpg">
+        <img src="./images/bg4.jpg">
+        <img src="./images/bg5.jpg">
+        <img src="./images/bg6.jpg">
+        <img src="./images/bg7.jpg">
+	</div>
+	<div class="g-bd">
+        <p class="word"></p>
+		<div class="login-part">
+			<div class="logo">
+				<h1>&nbsp;榕叶</h1>
+				<h2>分享你心情的地方&nbsp;</h2>
+			</div>
+			<div class="login-box">
+				<ul class="log-tab">
+					<li class="selected">登录</li>
+					<li>注册</li>
+				</ul>
+				<div class="log">
+                    <p>使用榕叶账号登录</p>
+					<form action="/work/src/login.php" method="post">
+						<input type="text" placeholder="用户名" name="username">
+						<input type="password" placeholder="密码" name="password">
+						<input type="submit" value="登 录">	
+					</form>
+				</div>
+				<div class="reg">
+                    <p>加入榕叶，分享你的心情</p>
+					<form action="/work/src/register.php" method="post">
+						<input type="text" placeholder="用户名" name="username">
+						<input type="password" placeholder="密码" name="password">
+						<input type="submit" value="注 册">	
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="g-ft" style="position: absolute;bottom: 0;left: 0;">
+		Designed by &copy; <span>XuYingrong</span>-master Kinice
+	</div>
+	<script src="./js/index.js"></script>
+</body>
+</html>
