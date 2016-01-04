@@ -78,7 +78,7 @@ $(function(){
 	$(document).on('click','span.goods',function(){
 		var time = $(this).siblings('.pubtime')[0].innerHTML;
 		var nums = $(this).children('.nums').html();
-		nums = parseInt(nums + 1);
+		nums = parseInt(nums) + 1;
 		if(time!=''){
 			$.post('/work/src/good.php',{
 				pubtime: time
