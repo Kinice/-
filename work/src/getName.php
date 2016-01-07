@@ -9,6 +9,6 @@
 			echo $value;
 		}
 	}else{
-		echo 'error';
+		echo '<script>alert('请先登录！！！');window.location.replace('xuyingrong.sinaapp.com/work/views/index.html');</script>';
 	}
 ?>
