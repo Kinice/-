@@ -7,7 +7,7 @@
  * 购物车
  * 登录查询课表
 
-##更新
+## 更新
 选择了微博这个项目。项目地址是这个：[榕叶](http://xuyingrong.sinaapp.com/work/views/index.html)。
 
 线上版本的代码地址是这个：[work](https://github.com/Kinice/HelpHomework/tree/master/work)。
